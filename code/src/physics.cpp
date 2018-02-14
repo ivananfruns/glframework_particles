@@ -43,15 +43,18 @@ void PhysicsInit() {
 		positions[i].x = rand() % 3;
 		positions[i].y = rand() % 3;
 		positions[i].z = rand() % 3;
+
 		if(i%2==0)
-		velocitys[i].x = ((float)rand()) / (float)RAND_MAX;
+			velocitys[i].x = ((float)rand()) / (float)RAND_MAX;
 		else
-		velocitys[i].x = -((float)rand()) / (float)RAND_MAX;
-		if (i % 2 == 0)
+			velocitys[i].x = -((float)rand()) / (float)RAND_MAX;
+
+		if (i % 3 == 0)
 			velocitys[i].y = ((float)rand()) / (float)RAND_MAX;
 		else
 			velocitys[i].y = -((float)rand()) / (float)RAND_MAX;
-		if (i % 2 == 0)
+
+		if (i % 4 == 0)
 			velocitys[i].z = ((float)rand()) / (float)RAND_MAX;
 		else
 			velocitys[i].z = -((float)rand()) / (float)RAND_MAX;
