@@ -4,8 +4,10 @@
 #include <imgui\imgui.h>
 #include <imgui\imgui_impl_sdl_gl3.h>
 #include <cstdio>
-
+#include <iostream>
 #include "GL_framework.h"
+#include <stdlib.h>   
+#include <time.h>
 
 
 extern void PhysicsInit();
@@ -41,6 +43,7 @@ namespace {
 }
 
 int main(int argc, char** argv) {
+
 	//Init GLFW
 	if (SDL_Init(SDL_INIT_VIDEO) != 0) {
 		SDL_Log("Couldn't initialize SDL: %s", SDL_GetError());
